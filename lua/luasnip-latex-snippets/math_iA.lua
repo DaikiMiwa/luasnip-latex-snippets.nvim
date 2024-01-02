@@ -180,6 +180,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "invs", name = "inverse" }, "^{-1}"),
     parse_snippet({ trig = "~~", name = "~" }, "\\sim "),
     parse_snippet({ trig = "conj", name = "conjugate" }, "\\overline{$1}$0"),
+
+    parse_snippet({ trig = "bm", name = "bold math" }, "\\bm{$1}$0"),
   }
 end
 
